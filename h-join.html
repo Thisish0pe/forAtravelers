@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>h-join</title>
+    <link rel="stylesheet" href="./CSS/h-style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header-head">
+      <h1>
+        <a href="./index.html">For A travelers</a>
+      </h1>
+      <div class="header-click">
+        <a href="#log in">로그인</a>
+        <a href="./h-join.html">회원가입</a>
+        <button type="button">로그아웃</button>
+      </div>
+    </div>
+    <!-- //header -->
+
+    <!-- join -->
+    <div class="main">
+      <div class="container">
+        <h2 class="join-head">회원가입</h2>
+        <p class="join-p">원활한 서비스 이용을 위해 회원가입을 해주세요.</p>
+        <form class="join-form" action="post">
+          <div>
+            <label class="join-label" for="user-id">아이디</label>
+            <input type="text" id="user-id" name="userId" />
+          </div>
+          <div>
+            <label class="join-label" for="user-email">이메일</label>
+            <input type="email" id="user-email" name="userEmail" />
+          </div>
+          <div>
+            <label class="join-label" for="user-pw">비밀번호</label>
+            <input type="password" id="user-pw" name="userPw" />
+          </div>
+          <div>
+            <label class="join-label" for="user-nickname">닉네임</label>
+            <input type="text" id="user-nickname" name="userNickname" />
+          </div>
+          <fieldset class="join-field">
+            <legend class="join-gender">성별</legend>
+            <ul>
+              <li>
+                <input type="radio" name="gender" value="male" id="male" />
+                <label for="male">남성</label>
+              </li>
+              <li>
+                <input type="radio" name="gender" value="females" id="female" />
+                <label for="female">여성</label>
+              </li>
+              <li>
+                <input type="radio" name="gender" value="no" id="no" />
+                <label for="no">선택 안함</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="join-field">
+            <legend class="join-country">여행 희망 국가</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="korea" id="korea" />
+                <label for="korea">한국</label>
+              </li>
+              <li>
+                <input type="checkbox" name="usa" id="usa" />
+                <label for="usa">미국</label>
+              </li>
+              <li>
+                <input type="checkbox" name="indian" id="indian" />
+                <label for="indian">인도</label>
+              </li>
+              <li>
+                <input type="checkbox" name="usa" id="usa" />
+                <label for="usa">일본</label>
+              </li>
+              <li>
+                <input type="checkbox" name="eu" id="eu" />
+                <label for="eu">유럽 국가</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div>
+            <button type="submit" class="button">회원가입</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- //join -->
+
+    <!-- footer -->
+    <div class="main"></div>
+    <p class="footer-p">Copyright 2023. Hope All rights reserved.</p>
+    <!-- //footer -->
+  </body>
+</html>

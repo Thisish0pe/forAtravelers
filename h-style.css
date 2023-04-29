@@ -1,4 +1,3 @@
-/* h-post (글쓰기) */
 body,
 h1,
 h2,
@@ -6,12 +5,70 @@ p {
   padding: 0;
   margin: 0;
 }
-/* .post-main {
-  background-color: skyblue;
+.main {
   flex-grow: 1;
   width: 1000px;
   margin: auto;
-} */
+}
+.button-group {
+  margin-top: 20px;
+  text-align: right;
+}
+.button {
+  background-color: #eee;
+  color: black;
+  text-decoration: none;
+  width: 80px;
+  height: 32px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font: inherit;
+}
+.container {
+  width: 360px;
+  margin: 40px auto;
+}
+/* h-layout */
+body {
+  min-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* //h-layout */
+
+/* header */
+.header-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 80px;
+  border-bottom: 1px solid #ddd;
+}
+.header-head h1 a {
+  color: black;
+  text-decoration: none;
+}
+.header-click a,
+.header-click button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  color: black;
+  text-decoration: none;
+}
+.header-click button {
+  font: inherit;
+  background: none;
+  border: 0;
+}
+/* //header */
+
+/* h-post (글쓰기) */
 .post-head {
   margin: 60px 0 20px 0;
 }
@@ -52,21 +109,109 @@ p {
   width: 100%;
   height: 400px;
 }
-.post-button-group {
-  margin-top: 20px;
-  text-align: right;
+/* // h-post (글쓰기) */
+
+/* index.html (글목록) */
+.index-head {
+  margin: 60px 0 10px 0;
 }
-.post-button {
+.index-p {
+  margin-bottom: 20px;
+}
+.index-table {
+  border-top: 2px solid black;
+  border-bottom: 1px solid #ccc;
+  width: 1000px;
+  border-collapse: collapse;
+}
+.index-thead {
   background-color: #eee;
+  height: 32px;
+}
+.index-tbody {
+  text-align: center;
+}
+.index-tr {
+  border-top: 1px solid #ccc;
+  height: 60px;
+}
+/* 선생님... 여기가 적용이 안됩니당.. */
+.index-table a {
+  display: block;
+  text-align: left;
+  padding: 8px 0;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   color: black;
   text-decoration: none;
-  width: 80px;
-  height: 32px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  font: inherit;
 }
+.button a {
+  text-decoration: none;
+  color: inherit;
+}
+/* //index.html (글목록) */
+
+/* h-join */
+.join-head,
+.join-p {
+  text-align: center;
+}
+.join-p {
+  margin: 20px 0;
+}
+.join-form > div {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.join-label {
+  display: inline-block;
+  width: 70px;
+}
+[type="text"],
+[type="password"],
+[type="email"] {
+  width: 290px;
+  height: 32px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.join-field {
+  border: 0;
+  margin: 20px 0;
+}
+.join-field legend {
+  float: left;
+}
+.join-gender {
+  width: 75px;
+}
+.join-country {
+  width: 95px;
+}
+.join-field ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+}
+.field ul li {
+  /* 1.가로배치 */
+  display: inline-block;
+}
+[type="checkbox"]:checked + label {
+  font-weight: bold;
+}
+/* //h-join */
+
+/* footer */
+.footer-p {
+  background-color: #eee;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 80px;
+  bottom: 0;
+}
+/* //footer */
